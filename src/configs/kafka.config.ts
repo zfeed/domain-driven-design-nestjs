@@ -18,7 +18,7 @@ export const kafka: KafkaOptions['options'] = {
         }
     },
     consumer: {
-        groupId: 'humsters-game',
+        groupId: 'hamsters-game',
         metadataMaxAge: 5 * 60 * 1000,
         sessionTimeout: 30 * 1000,
         rebalanceTimeout: 60 * 1000,

@@ -6,7 +6,7 @@ interface Swagger {
 }
 
 export const swagger: Swagger = {
-    title: 'Humsters Game',
+    title: 'hamsters Game',
     description: '',
     version: '0.1.0',
     tag: 'Public API'

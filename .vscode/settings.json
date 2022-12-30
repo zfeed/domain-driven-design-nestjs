@@ -9,5 +9,12 @@
     },
     "prettier.requireConfig": true,
     "typescript.tsdk": "node_modules/typescript/lib",
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "cSpell.words": [
+        "kafkajs",
+        "mikro",
+        "nestjs",
+        "reauthentication",
+        "rebalance"
+    ]
 }
