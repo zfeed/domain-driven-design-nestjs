@@ -34,10 +34,6 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# SQLite db
-humsters.db
-humsters.test.db
-
 .env
 .env.test
 .env.development
