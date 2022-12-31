@@ -72,8 +72,6 @@ describe('Match', () => {
         expect(matches[0]?.getPlayers()).toEqual([
             {
                 id: expect.any(String),
-                // TODO: fix it
-                _events: [],
                 name: 'John',
                 score: expect.any(Number)
             }
@@ -131,15 +129,12 @@ describe('Match', () => {
         expect(matches[0]?.getPlayers()).toEqual([
             {
                 id: expect.any(String),
-                // TODO: fix it
-                _events: [],
                 name: 'John',
                 score: expect.any(Number)
             },
             {
                 id: expect.any(String),
                 // TODO: fix it
-                _events: [],
                 name: 'Mike',
                 score: expect.any(Number)
             }

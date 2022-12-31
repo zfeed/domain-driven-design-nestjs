@@ -5,7 +5,7 @@ type StripInternalMethods<T, K extends keyof any> = Omit<T, K>;
 
 declare namespace NodeJS {
     export interface ProcessEnv {
-        NODE_ENV: string;
+        NODE_ENV: 'test' | 'development' | 'production';
         APP_PORT: string;
         POSTGRES_HOST: string;
         POSTGRES_PASSWORD: string;

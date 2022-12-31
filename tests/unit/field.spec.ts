@@ -18,8 +18,8 @@ describe('Field', () => {
         expect(field.getCreatedAt()).toEqual(now);
         expect(field.getFinishedAt()).toEqual(null);
         expect(field.getSize()).toBe(16);
-        expect(field.getMarkedCellPosition()).toBeGreaterThanOrEqual(1);
-        expect(field.getMarkedCellPosition()).toBeLessThanOrEqual(16);
+        expect(field.getMarkedCellPosition()).toBeGreaterThanOrEqual(0);
+        expect(field.getMarkedCellPosition()).toBeLessThanOrEqual(15);
     });
 
     test("Field's marked cell is hit", () => {
@@ -61,8 +61,8 @@ describe('Field', () => {
             )
         ]);
         expect(currentMarkedCellPosition).not.toBe(previousMarkedCellPosition);
-        expect(field.getMarkedCellPosition()).toBeGreaterThanOrEqual(1);
-        expect(field.getMarkedCellPosition()).toBeLessThanOrEqual(16);
+        expect(field.getMarkedCellPosition()).toBeGreaterThanOrEqual(0);
+        expect(field.getMarkedCellPosition()).toBeLessThanOrEqual(15);
     });
 
     test("Field can't be hit when session is over", () => {
