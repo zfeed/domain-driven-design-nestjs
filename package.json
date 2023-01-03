@@ -15,7 +15,7 @@
         "start:prod": "node dist/main",
         "lint": "eslint \"{src,apps,libs,tests}/**/*.ts\"",
         "test": "jest --config ./tests/jest-unit.js",
-        "test:integration": "DOTENV_CONFIG_PATH=.env.test jest --config ./tests/jest-integration.js --runInBand",
+        "test:integration": "jest --config ./tests/jest-integration.js --runInBand",
         "test:integration:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --config ./tests/jest-integration.js --testTimeout=6000000",
         "test:watch": "jest --config ./tests/jest-unit.js --watch",
         "test:cov": "jest --coverage",
