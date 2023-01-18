@@ -12,6 +12,15 @@ services:
         ports:
             - 9229:9229
             - ${APP_PORT}:${APP_PORT}
+    prometheus:
+        restart: always
+        volumes:
+            - type: bind
+              source: ./prometheus.yml
+              target: /etc/prometheus/prometheus.yml
+        image: prom/prometheus:latest
+        ports:
+            - "9090:9090"
     postgres:
         image: postgres:15.1
         volumes:
